@@ -1,0 +1,127 @@
+.projects {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    &__title {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 150px;
+    }
+}
+
+.leftcard {
+    .card__content {
+        margin-left: 50px;
+    }   
+}
+
+.rightcard {
+    .card__content {
+        margin-right: 50px;
+    }   
+}
+
+.card {
+    display: flex;
+    margin-top: 100px;
+    position: relative;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    &__buttons {
+        position: absolute;
+        bottom: 20px;
+        margin-top: 50px;
+    }
+
+    &__title {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    &__desctription {
+        font-size: 19px;
+        margin-bottom: 50px;
+        max-width: 700px;
+    }
+
+    &__image {
+        width: 460px;
+        height: 310px;
+    }
+
+    &__button {
+        padding: 15px 40px;
+        background-color: #000;
+        display: inline-block;
+        color: #fff;
+        font-size: 17px;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        border-radius: 25px;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #2AA1FF;
+        }
+
+        &:focus {
+            background-color: #2AA1FF;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .card {
+        display: flex;
+        text-align: center;
+        position: relative;
+        flex-flow: column;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+        padding: 50px 10px;
+        border-radius: 20px;
+        margin-top: 30px;
+
+        &__image {
+            width: 340px;
+            height: 230px;
+        }
+
+        &__title {
+            margin-top: 20px;
+        }
+
+        &__buttons {
+            position: static;
+    
+        }
+    }
+
+    .leftcard {
+        .card__content {
+            margin-left: 0;
+        }   
+    }
+    
+    .rightcard {
+        .card__content {
+            margin-right: 0;
+        }
+
+        .card__image {
+            margin-top: 30px;
+        }
+    }
+}

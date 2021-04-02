@@ -1,0 +1,42 @@
+.about {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-flow: column;
+    
+    &__title {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-size: 19px;
+        max-width: 700px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        margin-right: 150px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about {
+        &__content {
+            margin-right: 10px;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .about {
+        &__image {
+            display: none;
+        }
+    }
+}

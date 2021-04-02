@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    padding: 100px 120px 0;
+    scroll-behavior: smooth;
+}
+
+.flexcenter {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+@media (max-width: 1100px) {
+    body {
+        padding: 100px 50px 0;
+    }
+}
+
+@import './components/homepage/header';
+@import './components/homepage/nav';
+@import './components/homepage/projects';
+@import './components/homepage/about';
+@import './components/homepage/contact';
+@import './components/homepage/footer';
