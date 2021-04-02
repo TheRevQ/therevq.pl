@@ -1,9 +1,14 @@
 /home /
 /discord https://discord.gg/J5sWAqcEuB
 /twitter https://twitter.com/revimeister
-/github https://github.com/TheRevQ
+/github/* https://github.com/TheRevQ/:splat
 /opensource/* https://github.com/TheRevQ/:splat
 /steam https://steamcommunity.com/id/therevq
+
+# Sections
+/contact /#contact
+/about /#about
+/projects /#projekts
 
 # Projects
 /quicktext https://quicktext.therevq.pl/
@@ -15,12 +20,6 @@
 
 # Developers
 /developers /github
-
-# Apps
-/applications /apps
-/aplikacje /apps
-/app /apps
-/projects /apps
 
 # Errors
 /system/noscript /noscript
