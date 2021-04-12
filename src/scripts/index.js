@@ -28,7 +28,6 @@ button.addEventListener('click', () => {
     });
 })
 
-document.querySelector("form").addEventListener("submit", handleSubmit);
 const handleSubmit = (e) => {
   e.preventDefault()
   let myForm = document.getElementById('pizzaOrder');
@@ -38,5 +37,6 @@ const handleSubmit = (e) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString()
   }).then(() => console.log('Form successfully submitted')).catch((error) =>
-    alert(error))
+  alert(error))
 }
+document.querySelector("form").addEventListener("submit", handleSubmit);
