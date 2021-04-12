@@ -1,5 +1,9 @@
-gsap.registerPlugin(ScrollTrigger);
+const loader = document.querySelector('.loader');
+window.addEventListener('load', () => {
+  loader.style.display = 'none'; 
+});
 
+gsap.registerPlugin(ScrollTrigger);
 const sections = document.querySelectorAll('.section');
 
 sections.forEach(section => {
