@@ -1,19 +1,26 @@
 .header {
+    position: relative;
+
     &__title {
-        font-size: 64px;
+        font-size: 50px;
     }
-    
+
     &__box {
         width: 100%;
         display: flex;
-        // align-items: center;
-        // flex-flow: center;
     }
 
     &__text {
-        font-size: 24px;
+        font-size: 20px;
         margin-top: 20px;
         max-width: 500px;
+    }
+
+    &__image {
+        width: 600px;
+        right: 50px;
+        display: flex;
+        transform: translateY(-55px);
     }
 
     &__button {
@@ -33,7 +40,7 @@
         &:hover {
             background-color: #2AA1FF;
         }
-        
+
         &:focus {
             background-color: #2AA1FF;
         }

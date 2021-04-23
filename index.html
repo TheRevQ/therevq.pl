@@ -39,7 +39,7 @@
     </div>
 
     <div class="nav">
-        <h2 class="nav__title">therevq.</h2>
+        <h2 onclick="link('./')" class="nav__title">therevq.</h2>
     </div>
 
     <div class="header flexcenter">
@@ -329,6 +329,12 @@
             </a>
         </div>
     </div>
+
+    <script>
+        const link = (url) => {
+            location.href = url;
+        }
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
