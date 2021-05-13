@@ -26,8 +26,9 @@ button.addEventListener('click', () => {
         top: rect.top,
         behavior: 'smooth'
     });
-})
-
+  })
+document.querySelector("form").addEventListener("submit", handleSubmit);
+  
 const handleSubmit = (e) => {
   e.preventDefault()
   let myForm = document.getElementById('pizzaOrder');
@@ -39,4 +40,3 @@ const handleSubmit = (e) => {
   }).then(() => console.log('Form successfully submitted')).catch((error) =>
   alert(error))
 }
-document.querySelector("form").addEventListener("submit", handleSubmit);
